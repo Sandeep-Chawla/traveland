@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Tour and Travels Website">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Traveland,Tour,Travel,Vacation,Holiday,Flight,Bus">
+    <meta name="author" content="Sandeep Chawla">
+    <title>Traveland</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5f015303d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="home" class="sahara">
+        <nav id="navbar">
+            <span id="title">Traveland</span>
+            <span id="menu-parent">
+                <ul id="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#offer-box">Packages</a></li>
+                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#subscribe">Subscribe Us</a></li>
+                </ul>
+            </span>
+        </nav>
+        <div id="home-container">
+            <span id="main-text">Travel to the most beautiful places in the world, like <span id="anim">Sahara
+                    Desert</span></span>
+            <button id="btn1">Contact Us</button>
+        </div>
+    </section>
+    <script>
+        setInterval(function () {
+            if (document.getElementById('home').className === 'sahara') {
+                document.getElementById('home').className = 'jordan';
+                document.getElementById('anim').innerHTML = 'Petra in Jordan';
+            }
+            else if (document.getElementById('home').className === 'jordan') {
+                document.getElementById('home').className = 'maachupichu';
+                document.getElementById('anim').innerHTML = 'Machu Picchu';
+
+            }
+            else if (document.getElementById('home').className === 'maachupichu') {
+                document.getElementById('home').className = 'rome';
+                document.getElementById('anim').innerHTML = 'The Colosseum';
+            }
+            else if (document.getElementById('home').className === 'rome') {
+                document.getElementById('home').className = 'sahara';
+                document.getElementById('anim').innerHTML = 'Sahara Desert';
+            }
+        }, 8000);
+    </script>
+    <form action="#booking">
+        <div id="booking">
+            <select id="destination" required>
+                <option value="0">Destination</option>
+                <option value="1">Tokyo</option>
+                <option value="2">Berlin</option>
+                <option value="3">Nairobi</option>
+                <option value="4">Rio</option>
+                <option value="5">Denver</option>
+                <option value="6">Helsinki</option>
+                <option value="7">Oslo</option>
+                <option value="8">Moscow</option>
+                <option value="9">Stockholm</option>
+                <option value="10">Lisbon</option>
+                <option value="10">Palermo</option>
+                <option value="10">Bogota</option>
+                <option value="10">Marseille</option>
+            </select>
+            <label for="date"></label>
+            <input type="date" name="date" id="date" value="2021-12-15" min="2021-12-15" max="2022-12-31" required>
+            <input type="text" name="no. of people" id="people" placeholder="Enter # of People" required>
+            <input type="submit" id="btn2" value='Search'>
+        </div>
+    </form>
+    <section id="popular-destinations">
+        <div id="popular">
+            <p id="popular-head">Popular Destination</p>
+            <p id="border"></p>
+        </div>
+        <div id="destination-img">
+            <a href='#destin' class="destin">
+                <div class="h1 hoverable"></div><span>Sahara Desert</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h2 hoverable"></div><span>Christ the Redeemer in Brazil</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h3 hoverable"></div><span>London,United Kingdom</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h4 hoverable"></div><span>Paris,France</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h5 hoverable"></div><span>Bali,Indonesia</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h6 hoverable"></div><span>Singapore</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h7 hoverable"></div><span>The Colosseum in Rome</span>
+            </a>
+            <a href='#destin' class="destin">
+                <div class="h8 hoverable"></div><span>Statue of Unity,Gujarat,India</span>
+            </a>
+        </div>
+    </section>
+    <section id="offer-box">
+        <div id="offer">
+            <div id="offer-title">Packages</div>
+            <p id="border"></p>
+        </div>
+        <div id="card-box">
+            <div class="card">
+                <div id="c1-img"></div>
+                <span class="c1 text">
+                    <span class="location">Kaafu Atoll</span>
+                    <span class="price">&#x20B9;52000</span>
+                </span>
+                <span class="country">Maldvies</span>
+            </div>
+            <div class="card">
+                <div id="c2-img"></div>
+                <span class="c2 text">
+                    <span class="location">The white City</span>
+                    <span class="price">&#x20B9;52000</span>
+                </span>
+                <span class="country">Greece</span>
+            </div>
+            <div class="card">
+                <div id="c3-img"></div>
+                <span class="c3 text">
+                    <span class="location">Christ the Redeemer</span>
+                    <span class="price">&#x20B9;52000</span>
+                </span>
+                <span class="country">Brazil</span>
+            </div>
+            <div class="card">
+                <div id="c4-img"></div>
+                <span class="c4 text">
+                    <span class="location">Arabische Emiraten</span>
+                    <span class="price">&#x20B9;52000</span>
+                </span>
+                <span class="country">Dubai</span>
+            </div>
+        </div>
+    </section>
+    <section id="discount">
+        <div id="disc">
+            <div id="disc-num">
+                <span id="s1">45</span>
+                <span id="s2">%</span>
+                <span id="s3">OFF</span>
+                <span id="s4">SALE</span>
+            </div>
+            <div id="disc-texts">
+                <div id="disc-text">Just hurry up limited offer!</div>
+                <div id="end-time">Offer Ends In
+                    <span>01</span><b>:</b>
+                    <span>12</span><b>:</b>
+                    <span id="min">30</span><b>:</b>
+                    <span id="sec">30</span>
+                </div>
+                <div id="disc-btn">
+                    <button id="book-btn">Book Now</button>
+                    <button id="read-more">Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotels">
+        <div id="hotel">
+            <div id="h-title">Recommended Hotels</div>
+            <div id="h-btns">
+                <button id="left" onclick="moveright();"> &lt; </button>
+                <button id="right" onclick="moverleft();"> &gt; </button>
+            </div>
+            <div id="h-cards">
+                <div id="h-card">
+                    <div id="h-card1">
+                        <div id="h-card1-img">
+                            <div class="corner"><span>&#x20B9;9000 <span>/night</span></span></div>
+                        </div>
+                        <span class="h-card1-text">
+                            <span class="h-loc">Hotel Edison</span>
+                            <span class="h-coun">New York, USA</span>
+                        </span>
+                    </div>
+                    <div id="h-card2">
+                        <div id="h-card2-img">
+                            <div class="corner"><span>&#x20B9;9000 <span>/night</span></span></div>
+                        </div>
+                        <span class="h-card1-text">
+                            <span class="h-loc">Hotel Edison</span>
+                            <span class="h-coun">New York, USA</span>
+                        </span>
+                    </div>
+                    <div id="h-card3">
+                        <div id="h-card3-img">
+                            <div class="corner"><span>&#x20B9;9000 <span>/night</span></span></div>
+                        </div>
+                        <span class="h-card1-text">
+                            <span class="h-loc">Hotel Edison</span>
+                            <span class="h-coun">New York, USA</span>
+                        </span>
+                    </div>
+                    <div id="h-card4">
+                        <div id="h-card4-img">
+                            <div class="corner"><span>&#x20B9;9000 <span>/night</span></span></div>
+                        </div>
+                        <span class="h-card1-text">
+                            <span class="h-loc">Hotel Edison</span>
+                            <span class="h-coun">New York, USA</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="customer">
+        <div id="travel-n">9,313<span># of Travels</span></div>
+        <div id="client-n">8,492<span># of Clients</span></div>
+        <div id="emp-n">100<span># of Employees</span></div>
+        <div id="country-n">120<span># of Countries</span></div>
+    </section>
+    <section id="services">
+        <div id="serve-title">Our Services</div>
+        <p id="border"></p>
+        <div id="serve-box">
+            <div id="s-box-img"></div>
+            <div id="s-box">
+                <div id="s-s-box1"><i class="fas fa-bus"></i><span>Easy & Free Transport</span></div>
+                <div id="s-s-box2"><i class="fas fa-swimming-pool"></i><span>Swimming Pool</span></div>
+                <div id="s-s-box3"><i class="fas fa-utensils"></i><span>Delicious Food</span></div>
+                <div id="s-s-box4"><i class="fas fa-dumbbell"></i><span>Gym</span></div>
+            </div>
+        </div>
+    </section>
+    <section id="subscribe">
+        <div id="sub-title">Sign Up for a newsletter</div>
+        <span>Sign up for our mailing list to get latest updates and offers.</span>
+        <div id="sub-input">
+            <form action="#subscribe">
+                <input type="email" name="mail" id="mail" placeholder="Enter your email" required>
+                <input type="submit" value="Subscribe" id="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        Copyright &copy;2021 All rights reserved | Traveland&reg; Designed and Developed by Sandeep Chawla
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
